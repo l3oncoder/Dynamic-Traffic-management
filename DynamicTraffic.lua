@@ -3,7 +3,7 @@ CreateThread(
         while true do
             Wait(0)
             
-            local playerPed = GetPlayerPed(-1)
+            local playerPed = PlayerPedId()
             local playerId = PlayerId()
             
             --[[ DISABLE VEHICLE GENERATORS IN PLAYER AREA ]]
