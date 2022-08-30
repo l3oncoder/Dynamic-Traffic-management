@@ -1,7 +1,7 @@
 CreateThread(
     function()
         while true do
-            Wait(500)
+            Wait(0)
             
             local playerPed = PlayerPedId()
             local playerId = PlayerId()
@@ -10,13 +10,7 @@ CreateThread(
             
             local DensityMultiplier = 1.0
             local hour = GetClockHours()
-            if (hour >= 00 and hour <= 01) then
-            DensityMultiplier = 0.1
-            elseif (hour >= 01 and hour <= 02) then
-            DensityMultiplier = 0.1
-            elseif (hour >= 02 and hour <= 03) then
-            DensityMultiplier = 0.1
-            elseif (hour >= 03 and hour <= 04) then
+            if (hour >= 00 and hour <= 04) then
             DensityMultiplier = 0.1
             elseif (hour >= 04 and hour <= 05) then
             DensityMultiplier = 0.2
@@ -26,15 +20,11 @@ CreateThread(
             DensityMultiplier = 0.5
             elseif (hour >= 07 and hour <= 10) then
             DensityMultiplier = 1.0
-            elseif (hour >= 10 and hour <= 11) then
-            DensityMultiplier = 0.5
-            elseif (hour >= 11 and hour <= 12) then
+            elseif (hour >= 10 and hour <= 12) then
             DensityMultiplier = 0.5
             elseif (hour >= 12 and hour <= 14) then
             DensityMultiplier = 0.7
             elseif (hour >= 14 and hour <= 15) then
-            DensityMultiplier = 0.5
-            elseif (hour >= 15 and hour <= 16) then
             DensityMultiplier = 0.5
             elseif (hour >= 15 and hour <= 16) then
             DensityMultiplier = 0.7
