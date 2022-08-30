@@ -1,7 +1,7 @@
 CreateThread(
     function()
         while true do
-            Wait(250)
+            Wait(500)
             
             local playerPed = PlayerPedId()
             local playerId = PlayerId()
