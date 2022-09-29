@@ -60,7 +60,7 @@ CreateThread(
             SetVehicleDensityMultiplierThisFrame(DensityMultiplier)
             SetPedDensityMultiplierThisFrame(DensityMultiplier)
             SetRandomVehicleDensityMultiplierThisFrame(DensityMultiplier)
-            SetParkedVehicleDensityMultiplierThisFrame(0)
+            SetParkedVehicleDensityMultiplierThisFrame(DensityMultiplier)
             SetScenarioPedDensityMultiplierThisFrame(DensityMultiplier, DensityMultiplier)
             
             --[[ POLICE IGNORE PLAYER ]]
